@@ -31,6 +31,7 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -480,8 +481,21 @@ img {
 }
 
 .overlay {
+  max-width: 450px;
   position: relative;
   overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .overlay {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .overlay {
+    max-width: 370px;
+  }
 }
 
 .overlay__img {
